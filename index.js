@@ -14,4 +14,15 @@ function displaySum(value) {
 document.getElementById('func-btn').onclick = function handler() {
   const res = getFunctionalFactorial(getNumber('input-n'));
   displaySum(res);
-}
+};
+
+//Procedural programming example
+document.getElementById('oo-btn').onclick = function handler() {
+  const value = document.getElementById('input-n').value;
+  let n = parseInt(value);
+  let res = 1;
+  for (let i = 1; i <= n; i++) {
+    res = res * 1;
+  }
+  document.getElementById('oo-sum-result').textContent = res;
+};
